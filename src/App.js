@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 
 // The base URL for all API requests
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://leaderboard-backend-lceg.onrender.com/api';
 
 // --- COMPONENTS ---
 
