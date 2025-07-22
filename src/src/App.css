@@ -1,0 +1,189 @@
+/* --- General Body Styles --- */
+/* This applies to the entire page's body element. */
+body {
+  /* Sets a default font stack, starting with Apple's system font and providing fallbacks. */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  /* A light grey background color for the whole page. */
+  background-color: #f4f7f6;
+  /* Sets the default text color to a dark grey for readability. */
+  color: #333;
+  /* Removes the default margin around the body, ensuring content touches the edge of the viewport. */
+  margin: 0;
+  /* Adds 20 pixels of space around the content within the body. */
+  padding: 20px;
+}
+
+/* --- Main App Container --- */
+/* This styles the main container of the application. */
+.App {
+  /* Restricts the maximum width of the container to 700 pixels. */
+  max-width: 700px;
+  /* Centers the container horizontally on the page. `0` for top/bottom, `auto` for left/right. */
+  margin: 0 auto;
+  /* Sets a white background for the container. */
+  background-color: #fff;
+  /* Adds padding inside the container: 20px on top/bottom, 40px on left/right. */
+  padding: 20px 40px;
+  /* Rounds the corners of the container by 12 pixels. */
+  border-radius: 12px;
+  /* Adds a subtle drop shadow to lift the container off the page. */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Header Title --- */
+/* Styles the main H1 heading inside the header. */
+header h1 {
+  /* Centers the text horizontally. */
+  text-align: center;
+  /* A dark, slate-blue color for the title text. */
+  color: #2c3e50;
+  /* Adds 30 pixels of space below the heading. */
+  margin-bottom: 30px;
+}
+
+/* --- Controls Section --- */
+/* Styles the container holding the user selection and claim button. */
+.controls {
+  /* Uses flexbox to arrange items in a row. */
+  display: flex;
+  /* Puts as much space as possible between the items (pushing them to opposite ends). */
+  justify-content: space-between;
+  /* Aligns items vertically to the center. */
+  align-items: center;
+  /* Adds space below the controls section. */
+  margin-bottom: 20px;
+  /* Adds space inside at the bottom before the border. */
+  padding-bottom: 20px;
+  /* Adds a light grey line at the bottom to separate it from the content below. */
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* --- Form Group --- */
+/* A wrapper for form elements like an input and a button. */
+.form-group {
+  /* Uses flexbox to arrange items inside. */
+  display: flex;
+  /* Adds a 10px gap between the items. */
+  gap: 10px;
+}
+
+/* --- Input and Select Fields --- */
+/* Styles both text input fields and dropdown select menus. */
+input[type="text"], select {
+  /* Adds 10 pixels of padding inside the fields. */
+  padding: 10px;
+  /* A light grey border around the fields. */
+  border: 1px solid #ccc;
+  /* Rounds the corners by 6 pixels. */
+  border-radius: 6px;
+  /* Sets the font size inside the fields. */
+  font-size: 16px;
+}
+
+/* --- General Button Styles --- */
+button {
+  /* Adds padding inside the button: 10px top/bottom, 20px left/right. */
+  padding: 10px 20px;
+  /* Removes the default browser border. */
+  border: none;
+  /* Rounds the corners by 6 pixels. */
+  border-radius: 6px;
+  /* A blue background color. */
+  background-color: #3498db;
+  /* Sets the text color to white. */
+  color: white;
+  /* Sets the font size of the button text. */
+  font-size: 16px;
+  /* Changes the mouse cursor to a pointer (hand) on hover. */
+  cursor: pointer;
+  /* Adds a smooth transition effect for the background color over 0.2 seconds. */
+  transition: background-color 0.2s;
+}
+
+/* --- Button Hover State --- */
+/* Styles for when the mouse is hovering over a button. */
+button:hover {
+  /* A slightly darker blue background color on hover. */
+  background-color: #2980b9;
+}
+
+/* --- Disabled Button State --- */
+/* Styles for when a button is disabled. */
+button:disabled {
+  /* A grey background color to indicate it's not clickable. */
+  background-color: #bdc3c7;
+  /* Changes the cursor to a "not allowed" symbol. */
+  cursor: not-allowed;
+}
+
+/* --- Notification Message Box --- */
+/* Styles for the box that shows success or error messages. */
+.message {
+  /* Centers the text inside the box. */
+  text-align: center;
+  /* Adds 10 pixels of padding. */
+  padding: 10px;
+  /* Adds 10px margin on top and bottom. */
+  margin: 10px 0;
+  /* Rounds the corners by 6 pixels. */
+  border-radius: 6px;
+  /* A light green background for success messages. */
+  background-color: #e8f6e8;
+  /* A dark green text color. */
+  color: #2d6a4f;
+  /* Makes the text slightly bolder. */
+  font-weight: 500;
+}
+
+/* --- Leaderboard Title --- */
+/* Styles the H2 heading for the leaderboard section. */
+.leaderboard h2 {
+  /* Centers the text. */
+  text-align: center;
+  /* An orange color for the text. */
+  color: #e67e22;
+  /* Adds 20 pixels of space below the heading. */
+  margin-bottom: 20px;
+}
+
+/* --- Leaderboard Table --- */
+table {
+  /* Makes the table take up the full width of its container. */
+  width: 100%;
+  /* Collapses the borders between table cells into a single border. */
+  border-collapse: collapse;
+}
+
+/* --- Table Header and Data Cells --- */
+th, td {
+  /* Adds 12 pixels of padding inside each cell. */
+  padding: 12px;
+  /* Aligns the text to the left. */
+  text-align: left;
+  /* Adds a light grey line at the bottom of each cell. */
+  border-bottom: 1px solid #ddd;
+}
+
+/* --- Table Header Cells --- */
+th {
+  /* A very light grey background for the header row. */
+  background-color: #ecf0f1;
+}
+
+/* --- Table Row Hover State --- */
+/* Styles for when the mouse hovers over a row in the table body. */
+tbody tr:hover {
+  /* A slightly lighter grey background to highlight the row. */
+  background-color: #f9f9f9;
+}
+
+/* --- First Column of the Table --- */
+/* Styles the first `td` and `th` in each row (the Rank column). */
+td:first-child, th:first-child {
+  /* Makes the text bold. */
+  font-weight: bold;
+  /* Centers the text horizontally. */
+  text-align: center;
+  /* Sets a fixed width of 80 pixels for the column. */
+  width: 80px;
+}
